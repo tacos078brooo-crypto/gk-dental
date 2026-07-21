@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GK Dental &amp; Implant Center — Precision Implants &amp; Family Dentistry in Dammaiguda, Hyderabad</title>
+<meta name="description" content="GK Dental &amp; Implant Center in Dammaiguda, Hyderabad — 5.0 rated dental implants, root canal, cosmetic dentistry &amp; family dental care. Book your consultation today.">
+<meta name="theme-color" content="#123F38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23123F38'/%3E%3Ctext x='50' y='64' font-size='44' text-anchor='middle' fill='%23F2A65A' font-family='sans-serif' font-weight='700'%3EGK%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "GK Dental & Implant Center",
+  "image": "",
+  "telephone": "+91-8919332821",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "SS Heights, 1st Floor, Above Reliance Smart Point, PS Rao Nagar Main Road, Dammaiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500083",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "62"
+  },
+  "openingHours": "Mo-Su 09:00-21:00",
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+  :root{
+    --ink:#0E2A2A;
+    --porcelain:#F6F8F5;
+    --paper:#FFFFFF;
+    --teal:#1F7A6C;
+    --teal-strong:#166057;
+    --teal-deep:#123F38;
+    --teal-deepest:#0B2B27;
+    --apricot:#F2A65A;
+    --apricot-strong:#E88F38;
+    --mist:#DEE7E2;
+    --muted:#54655F;
+    --muted-soft:#8DA098;
+
+    --font-display:'Fraunces', serif;
+    --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+
+    --radius-sm:10px;
+    --radius-md:18px;
+    --radius-lg:28px;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --shadow-soft:0 2px 8px rgba(14,42,42,.05), 0 12px 32px rgba(14,42,42,.06);
+    --shadow-lift:0 8px 20px rgba(14,42,42,.08), 0 30px 60px rgba(14,42,42,.10);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    background:var(--porcelain);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+    overflow-x:hidden;
+  }
+
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+  ul{margin:0; padding:0; list-style:none;}
+  h1,h2,h3,h4{margin:0; font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;}
+  p{margin:0;}
+
+  :focus-visible{
+    outline:2.5px solid var(--teal);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .wrap{
+    max-width:1240px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal-strong);
+    font-weight:500;
+  }
+  .eyebrow::before{
+    content:"";
+    width:16px; height:1px;
+    background:var(--apricot-strong);
+  }
+
+  /* ============ REVEAL ============ */
+  .reveal{
+    opacity:0;
+    transform:translateY(22px);
+    transition:opacity .9s var(--ease), transform .9s var(--ease);
+  }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+  .reveal-stagger > *{ transition-delay:calc(var(--i,0) * 90ms); }
+
+  /* ============ NAV ============ */
+  .nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:18px 0;
+    transition:padding .4s var(--ease), background .4s var(--ease), box-shadow .4s var(--ease);
+  }
+  .nav.scrolled{
+    padding:12px 0;
+    background:rgba(246,248,245,.72);
+    backdrop-filter:blur(16px) saturate(160%);
+    -webkit-backdrop-filter:blur(16px) saturate(160%);
+    box-shadow:0 1px 0 rgba(14,42,42,.06);
+  }
+  .nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:17px; }
+  .brand-mark{
+    width:38px; height:38px; border-radius:11px;
+    background:linear-gradient(155deg, var(--teal-deep), var(--teal-strong));
+    display:flex; align-items:center; justify-content:center;
+    color:var(--apricot); font-family:var(--font-display); font-weight:700; font-size:15px;
+    box-shadow:0 4px 14px rgba(18,63,56,.28);
+  }
+  .brand-name{ font-family:var(--font-display); font-weight:600; }
+  .brand-name span{ display:block; font-family:var(--font-mono); font-weight:400; font-size:10.5px; letter-spacing:.1em; color:var(--muted); text-transform:uppercase; }
+
+  .nav-links{ display:flex; align-items:center; gap:34px; }
+  .nav-links a{
+    font-size:14.5px; font-weight:500; color:var(--ink); position:relative; padding:4px 0;
+  }
+  .nav-links a::after{
+    content:""; position:absolute; left:0; right:0; bottom:0; height:1.5px;
+    background:var(--teal); transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease);
+  }
+  .nav-links a:hover::after{ transform:scaleX(1); }
+
+  .nav-cta{ display:flex; align-items:center; gap:14px; }
+  .menu-toggle{ display:none; background:none; border:none; padding:8px; }
+  .menu-toggle span{ display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; transition:transform .3s var(--ease), opacity .3s var(--ease); }
+
+  @media (max-width:900px){
+    .nav-links{
+      position:fixed; inset:0 0 auto auto; top:70px; right:20px; left:20px;
+      background:var(--paper); border-radius:var(--radius-md);
+      flex-direction:column; align-items:flex-start; gap:4px; padding:14px;
+      box-shadow:var(--shadow-lift);
+      transform:translateY(-12px) scale(.98); opacity:0; pointer-events:none;
+      transition:all .3s var(--ease);
+    }
+    .nav-links.open{ transform:translateY(0) scale(1); opacity:1; pointer-events:auto; }
+    .nav-links a{ width:100%; padding:12px 10px; border-radius:8px; }
+    .nav-links a:hover{ background:var(--porcelain); }
+    .menu-toggle{ display:block; }
+    .nav-cta .btn-text{ display:none; }
+  }
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    position:relative; overflow:hidden; isolation:isolate;
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 26px; border-radius:100px; border:none;
+    font-size:14.5px; font-weight:600; letter-spacing:.01em;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .btn:active{ transform:scale(.97); }
+  .btn .ripple{
+    position:absolute; border-radius:50%; background:rgba(255,255,255,.5);
+    transform:scale(0); animation:ripple .6s var(--ease); pointer-events:none;
+  }
+  @keyframes ripple{ to{ transform:scale(1); opacity:0; } }
+
+  .btn-primary{
+    color:#fff; background:linear-gradient(135deg, var(--teal-strong), var(--teal-deep));
+    box-shadow:0 1px 1px rgba(18,63,56,.2), 0 10px 24px -8px rgba(18,63,56,.55);
+  }
+  .btn-primary::before{
+    content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; opacity:0;
+    background:linear-gradient(135deg, var(--apricot-strong), var(--teal-strong));
+    transition:opacity .4s var(--ease);
+  }
+  .btn-primary:hover::before{ opacity:1; }
+  .btn-primary:hover{ box-shadow:0 1px 1px rgba(18,63,56,.25), 0 14px 30px -8px rgba(232,143,56,.5); transform:translateY(-2px); }
+
+  .btn-ghost{
+    color:var(--ink); background:var(--paper); border:1px solid var(--mist);
+  }
+  .btn-ghost:hover{ border-color:var(--teal); box-shadow:0 8px 20px -10px rgba(31,122,108,.4); transform:translateY(-2px); }
+
+  .btn-outline-light{ color:#fff; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.35); backdrop-filter:blur(6px); }
+  .btn-outline-light:hover{ background:rgba(255,255,255,.16); transform:translateY(-2px); }
+
+  .btn.is-loading{ pointer-events:none; color:transparent; }
+  .btn.is-loading::after{
+    content:""; position:absolute; width:16px; height:16px; border-radius:50%;
+    border:2px solid rgba(255,255,255,.4); border-top-color:#fff;
+    animation:spin .7s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  /* ============ HERO ============ */
+  .hero{
+    position:relative; padding:168px 0 100px; overflow:hidden;
+  }
+  .hero::before{
+    content:""; position:absolute; top:-200px; right:-200px; width:640px; height:640px; border-radius:50%;
+    background:radial-gradient(circle, rgba(31,122,108,.13), transparent 70%);
+    filter:blur(10px);
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:center;
+  }
+  .hero-copy h1{
+    font-size:clamp(2.4rem, 4.6vw, 3.7rem); line-height:1.06; margin:22px 0 22px; color:var(--teal-deepest);
+  }
+  .hero-copy h1 em{ font-style:italic; color:var(--teal); }
+  .hero-sub{ font-size:17.5px; color:var(--muted); max-width:520px; margin-bottom:36px; }
+  .hero-actions{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:40px; }
+
+  .hero-trust{
+    display:flex; align-items:center; gap:22px; flex-wrap:wrap;
+    padding-top:28px; border-top:1px solid var(--mist);
+  }
+  .stars{ display:flex; gap:3px; color:var(--apricot-strong); }
+  .trust-item{ display:flex; align-items:center; gap:10px; }
+  .trust-num{ font-family:var(--font-display); font-weight:600; font-size:20px; color:var(--teal-deepest); }
+  .trust-label{ font-size:12.5px; color:var(--muted); line-height:1.3; }
+
+  /* hero diagram */
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .diagram-card{
+    position:relative; width:100%; max-width:420px; aspect-ratio:1/1.05;
+    background:linear-gradient(165deg, #ffffff, #F2F6F3);
+    border-radius:var(--radius-lg);
+    border:1px solid var(--mist);
+    box-shadow:var(--shadow-lift);
+    display:flex; align-items:center; justify-content:center;
+    padding:30px;
+  }
+  .diagram-card svg{ width:100%; height:100%; overflow:visible; }
+  .draw-path{ stroke-dasharray:900; stroke-dashoffset:900; animation:draw 2.6s var(--ease) forwards .3s; }
+  .draw-path.d2{ animation-delay:.6s; }
+  .draw-path.d3{ animation-delay:.9s; }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  .tick-label{ font-family:var(--font-mono); font-size:9.5px; fill:var(--muted); letter-spacing:.03em; }
+
+  .corner-tag{
+    position:absolute; font-family:var(--font-mono); font-size:11px; color:var(--teal-strong);
+    background:var(--paper); border:1px solid var(--mist); padding:6px 12px; border-radius:100px;
+    box-shadow:var(--shadow-soft); display:flex; align-items:center; gap:6px;
+  }
+  .corner-tag.top{ top:-14px; left:8px; }
+  .corner-tag.bottom{ bottom:-14px; right:8px; }
+  .corner-tag i{ width:6px; height:6px; border-radius:50%; background:var(--teal); display:inline-block; }
+
+  @media (max-width:900px){
+    .hero{ padding:130px 0 70px; }
+    .hero-grid{ grid-template-columns:1fr; gap:52px; }
+    .hero-visual{ order:-1; }
+    .diagram-card{ max-width:320px; }
+  }
+
+  /* ============ SECTION SHELL ============ */
+  section{ padding:120px 0; position:relative; }
+  @media (max-width:900px){ section{ padding:84px 0; } }
+  .section-head{ max-width:640px; margin-bottom:64px; }
+  .section-head h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-top:16px; color:var(--teal-deepest); }
+  .section-head p{ margin-top:16px; color:var(--muted); font-size:16.5px; }
+
+  /* ============ TRUST STRIP ============ */
+  .strip{ background:var(--paper); border-top:1px solid var(--mist); border-bottom:1px solid var(--mist); padding:44px 0; }
+  .strip-grid{ display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+  .strip-item{ display:flex; align-items:center; gap:12px; flex:1; min-width:190px; }
+  .strip-item .ic{ color:var(--teal); flex-shrink:0; }
+  .strip-item h4{ font-size:14.5px; font-family:var(--font-body); font-weight:600; }
+  .strip-item span{ font-size:13px; color:var(--muted); }
+
+  /* ============ SERVICES ============ */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;
+  }
+  @media (max-width:900px){ .services-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:640px){ .services-grid{ grid-template-columns:1fr; } }
+
+  .service-card{
+    position:relative; background:var(--paper); border-radius:var(--radius-md);
+    padding:32px 28px; border:1px solid var(--mist);
+    transition:transform .5s var(--ease), box-shadow .5s var(--ease), border-color .5s var(--ease);
+    overflow:hidden;
+  }
+  .service-card::before{
+    content:""; position:absolute; inset:0; border-radius:inherit; padding:1px;
+    background:linear-gradient(135deg, var(--teal), var(--apricot));
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    opacity:0; transition:opacity .5s var(--ease);
+  }
+  .service-card:hover{ transform:translateY(-8px); box-shadow:var(--shadow-lift); }
+  .service-card:hover::before{ opacity:1; }
+  .corner-bracket{ position:absolute; width:16px; height:16px; opacity:0; transition:opacity .4s var(--ease), transform .4s var(--ease); }
+  .corner-bracket.tl{ top:12px; left:12px; border-top:2px solid var(--apricot-strong); border-left:2px solid var(--apricot-strong); border-radius:4px 0 0 0; }
+  .corner-bracket.br{ bottom:12px; right:12px; border-bottom:2px solid var(--apricot-strong); border-right:2px solid var(--apricot-strong); border-radius:0 0 4px 0; }
+  .service-card:hover .corner-bracket{ opacity:1; }
+  .service-card:hover .corner-bracket.tl{ transform:translate(-3px,-3px); }
+  .service-card:hover .corner-bracket.br{ transform:translate(3px,3px); }
+
+  .service-icon{
+    width:52px; height:52px; border-radius:14px; margin-bottom:22px;
+    background:linear-gradient(155deg, var(--teal-deep), var(--teal-strong));
+    display:flex; align-items:center; justify-content:center; color:#fff;
+  }
+  .service-card.featured{ background:linear-gradient(165deg, var(--teal-deep), var(--teal-deepest)); color:#fff; border-color:transparent; }
+  .service-card.featured h3, .service-card.featured p{ color:#fff; }
+  .service-card.featured .service-icon{ background:rgba(255,255,255,.12); color:var(--apricot); }
+  .service-card.featured p{ color:rgba(255,255,255,.72); }
+  .service-card h3{ font-size:19px; margin-bottom:10px; }
+  .service-card p{ font-size:14.5px; color:var(--muted); }
+  .service-tag{
+    display:inline-block; margin-top:16px; font-family:var(--font-mono); font-size:11px;
+    color:var(--apricot-strong); letter-spacing:.05em; text-transform:uppercase;
+  }
+  .service-card.featured .service-tag{ color:var(--apricot); }
+
+  /* ============ PROCESS / ABOUT ============ */
+  .about{ background:var(--teal-deepest); color:#fff; }
+  .about .eyebrow{ color:var(--apricot); }
+  .about .eyebrow::before{ background:var(--apricot); }
+  .about .section-head h2{ color:#fff; }
+  .about .section-head p{ color:rgba(255,255,255,.68); }
+
+  .process-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,.12); border-radius:var(--radius-md); overflow:hidden; }
+  @media (max-width:900px){ .process-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .process-grid{ grid-template-columns:1fr; } }
+  .process-step{ background:var(--teal-deepest); padding:36px 28px; position:relative; transition:background .4s var(--ease); }
+  .process-step:hover{ background:#0F3630; }
+  .process-num{ font-family:var(--font-mono); font-size:12px; color:var(--apricot); letter-spacing:.08em; }
+  .process-step h4{ font-size:17px; color:#fff; margin:18px 0 10px; }
+  .process-step p{ font-size:14px; color:rgba(255,255,255,.65); }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonial-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media (max-width:900px){ .testimonial-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:640px){ .testimonial-grid{ grid-template-columns:1fr; } }
+  .t-card{
+    background:var(--paper); border:1px solid var(--mist); border-radius:var(--radius-md);
+    padding:28px; transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+  }
+  .t-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-lift); }
+  .t-stars{ display:flex; gap:2px; color:var(--apricot-strong); margin-bottom:16px; }
+  .t-quote{ font-size:15px; color:var(--ink); margin-bottom:22px; }
+  .t-person{ display:flex; align-items:center; gap:12px; }
+  .t-avatar{
+    width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-display); font-weight:600; font-size:14px; color:#fff;
+    background:linear-gradient(135deg, var(--teal), var(--teal-deep));
+  }
+  .t-name{ font-size:14px; font-weight:600; }
+  .t-meta{ font-size:12px; color:var(--muted); }
+
+  /* ============ FAQ ============ */
+  .faq-list{ max-width:760px; }
+  .faq-item{ border-bottom:1px solid var(--mist); }
+  .faq-q{
+    width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px;
+    background:none; border:none; padding:24px 4px; text-align:left; font-size:16.5px; font-weight:600; color:var(--ink);
+  }
+  .faq-icon{ position:relative; width:20px; height:20px; flex-shrink:0; }
+  .faq-icon::before, .faq-icon::after{
+    content:""; position:absolute; top:50%; left:50%; background:var(--teal-strong); transform:translate(-50%,-50%);
+    transition:transform .4s var(--ease), opacity .4s var(--ease);
+  }
+  .faq-icon::before{ width:14px; height:2px; }
+  .faq-icon::after{ width:2px; height:14px; }
+  .faq-item.open .faq-icon::after{ transform:translate(-50%,-50%) rotate(90deg); opacity:0; }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .5s var(--ease); }
+  .faq-a-inner{ padding:0 4px 26px; color:var(--muted); font-size:15px; max-width:640px; }
+  .faq-item.open .faq-a{ max-height:240px; }
+
+  /* ============ CONTACT ============ */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  @media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; gap:44px; } }
+
+  .info-card{
+    background:var(--paper); border:1px solid var(--mist); border-radius:var(--radius-md);
+    padding:32px; margin-bottom:18px; display:flex; gap:18px; align-items:flex-start;
+    transition:box-shadow .4s var(--ease), transform .4s var(--ease);
+  }
+  .info-card:hover{ box-shadow:var(--shadow-soft); transform:translateY(-3px); }
+  .info-ic{
+    width:44px; height:44px; border-radius:12px; background:var(--porcelain); color:var(--teal-strong);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; border:1px solid var(--mist);
+  }
+  .info-card h4{ font-size:15.5px; font-family:var(--font-body); font-weight:600; margin-bottom:4px; }
+  .info-card p{ font-size:14.5px; color:var(--muted); }
+  .info-card a.link{ color:var(--teal-strong); font-weight:600; }
+
+  .form-card{
+    background:linear-gradient(165deg, #ffffff, #F1F5F2); border:1px solid var(--mist);
+    border-radius:var(--radius-lg); padding:40px; box-shadow:var(--shadow-soft);
+  }
+  .field{ margin-bottom:20px; }
+  .field label{ display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--teal-deepest); }
+  .field input, .field textarea, .field select{
+    width:100%; padding:13px 16px; border-radius:11px; border:1px solid var(--mist);
+    background:#fff; font-family:inherit; font-size:14.5px; color:var(--ink);
+    transition:border-color .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{
+    outline:none; border-color:var(--teal); box-shadow:0 0 0 4px rgba(31,122,108,.12);
+  }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:480px){ .field-row{ grid-template-columns:1fr; } }
+  .form-note{ font-size:12.5px; color:var(--muted-soft); margin-top:14px; text-align:center; }
+
+  /* ============ FOOTER ============ */
+  footer{ background:var(--teal-deepest); color:rgba(255,255,255,.75); padding:70px 0 30px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.12); }
+  @media (max-width:800px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:480px){ .footer-grid{ grid-template-columns:1fr; } }
+  .footer-grid h5{ color:#fff; font-family:var(--font-body); font-size:13.5px; font-weight:600; margin-bottom:16px; letter-spacing:.02em; text-transform:uppercase; }
+  .footer-grid ul li{ margin-bottom:11px; font-size:14.5px; }
+  .footer-grid ul li a:hover{ color:var(--apricot); }
+  .footer-brand p{ font-size:14.5px; margin:16px 0 20px; max-width:280px; color:rgba(255,255,255,.6); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:26px; flex-wrap:wrap; gap:12px; font-size:13px; color:rgba(255,255,255,.5); }
+  .socials{ display:flex; gap:10px; }
+  .socials a{
+    width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,.18);
+    display:flex; align-items:center; justify-content:center; transition:all .3s var(--ease);
+  }
+  .socials a:hover{ background:var(--apricot); border-color:var(--apricot); color:var(--teal-deepest); transform:translateY(-3px); }
+
+  ::selection{ background:var(--apricot); color:var(--teal-deepest); }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">GK</span>
+      <span class="brand-name">GK Dental<span>Implant Center</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:08919332821" data-ripple><span class="btn-text">Call Now</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 3c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Dammaiguda · Hyderabad</span>
+        <h1>Precision implants,<br><em>built to last</em> a lifetime.</h1>
+        <p class="hero-sub">GK Dental &amp; Implant Center plans every restoration the way an engineer plans a foundation — measured, mapped, and placed with exact precision, so your smile holds up for decades, not years.</p>
+        <div class="hero-actions">
+          <a href="tel:08919332821" class="btn btn-primary" data-ripple>
+            Book a Consultation
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=GK+Dental+%26+Implant+Center+Dammaiguda+Hyderabad" target="_blank" rel="noopener" class="btn btn-ghost" data-ripple>Get Directions</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div class="stars" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z"/></svg>
+            </div>
+            <div>
+              <div class="trust-num">5.0</div>
+              <div class="trust-label">62 Google reviews</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">Open</div>
+            <div class="trust-label">Today until 9:00 PM</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">In-house</div>
+            <div class="trust-label">Implant &amp; imaging lab</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="diagram-card">
+          <span class="corner-tag top"><i></i> IMPLANT.CROSS-SECTION</span>
+          <svg viewBox="0 0 240 260" fill="none">
+            <!-- gumline -->
+            <path d="M20 150 Q120 130 220 150" stroke="#DEE7E2" stroke-width="1.5" stroke-dasharray="4 5"/>
+            <text x="26" y="144" class="tick-label">GINGIVA</text>
+            <!-- bone texture -->
+            <g opacity="0.5" stroke="#8DA098" stroke-width="1">
+              <path d="M30 175 h8 M50 180 h8 M70 172 h8 M160 178 h8 M180 172 h8 M200 180 h8"/>
+            </g>
+            <!-- crown -->
+            <path class="draw-path" d="M95 40 Q120 28 145 40 L150 88 Q120 104 90 88 Z" stroke="#1F7A6C" stroke-width="2.2" fill="#FFFFFF"/>
+            <!-- abutment -->
+            <path class="draw-path d2" d="M104 88 L107 118 L133 118 L136 88" stroke="#166057" stroke-width="2.2" fill="#F2F6F3"/>
+            <!-- screw / implant body -->
+            <path class="draw-path d3" d="M110 118 L108 220 Q120 232 132 220 L130 118" stroke="#123F38" stroke-width="2.2" fill="#F6F8F5"/>
+            <g class="draw-path d3" stroke="#123F38" stroke-width="1.4">
+              <path d="M107 130 h26 M105 145 h30 M104 160 h32 M104 175 h32 M105 190 h30 M107 203 h26"/>
+            </g>
+            <!-- measurement guides -->
+            <g stroke="#F2A65A" stroke-width="1" stroke-dasharray="2 3" opacity="0.9">
+              <line x1="158" y1="40" x2="158" y2="220"/>
+              <line x1="150" y1="40" x2="164" y2="40"/>
+              <line x1="150" y1="220" x2="164" y2="220"/>
+            </g>
+            <text x="164" y="132" class="tick-label" fill="#E88F38">11.4mm</text>
+            <text x="70" y="60" class="tick-label">CROWN</text>
+            <text x="55" y="105" class="tick-label">ABUTMENT</text>
+            <text x="40" y="170" class="tick-label">FIXTURE</text>
+          </svg>
+          <span class="corner-tag bottom"><i></i> PLANNED · PLACED · RESTORED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="strip reveal">
+    <div class="wrap strip-grid">
+      <div class="strip-item">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div><h4>Sterile-first protocols</h4><span>Autoclaved instruments, single-use consumables</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-7M22 20v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <div><h4>Digital scan &amp; planning</h4><span>Precise 3D mapping before every placement</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9A6 6 0 0 1 12 5.3 6 6 0 0 1 21.5 12c-2.5 4.5-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <div><h4>Doctor-led care</h4><span>Every plan reviewed and placed by the treating dentist</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <div><h4>Same-week appointments</h4><span>Open daily · closes 9:00 PM</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we treat</span>
+        <h2>Dentistry planned around one job — protecting your bite for life.</h2>
+        <p>From a single implant to a full-mouth rebuild, every treatment starts with the same question: what will still be working in twenty years?</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card featured reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2c-3 0-4 2-4 4 0 3 1 4 1 7 0 3-1 5 1 7 1 1 2-1 2-3s1 3 2 3c2 0 1-4 1-7 0-3 1-4 1-7 0-2-1-4-4-4Z" stroke="#F2A65A" stroke-width="1.6"/></svg></div>
+          <h3>Dental Implants</h3>
+          <p>Single-tooth, multi-unit and full-arch implants planned on digital scans and placed with surgical guides for sub-millimetre accuracy.</p>
+          <span class="service-tag">Our specialty →</span>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Root Canal Treatment</h3>
+          <p>Single-sitting, microscope-assisted root canals that relieve pain fast and preserve the natural tooth wherever possible.</p>
+          <span class="service-tag">Pain relief</span>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.3 5.9.8-4.3 4.1 1 5.8L12 16l-5.2 3 1-5.8L3.5 9.1l5.9-.8L12 3Z" stroke="#fff" stroke-width="1.6"/></svg></div>
+          <h3>Cosmetic &amp; Smile Design</h3>
+          <p>Veneers, bonding and whitening mapped to your face shape, not a stock template — designed to look unmistakably yours.</p>
+          <span class="service-tag">Aesthetic care</span>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#fff" stroke-width="1.6"/><path d="M9 9h6M9 13h6M9 17h3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Braces &amp; Aligners</h3>
+          <p>Metal, ceramic and clear-aligner orthodontics for teenagers and adults, with progress tracked against a digital treatment plan.</p>
+          <span class="service-tag">Alignment</span>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="#fff" stroke-width="1.6"/></svg></div>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle, unhurried first visits for children — cavity prevention, sealants and habit guidance in a calm, familiar setting.</p>
+          <span class="service-tag">For kids</span>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="corner-bracket tl"></span><span class="corner-bracket br"></span>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>Emergency Dental Care</h3>
+          <p>Sudden pain, a chipped tooth or a knocked-out crown — call ahead and we'll fit you in the same day, whenever possible.</p>
+          <span class="service-tag">Urgent visits</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / PROCESS -->
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How an implant is actually placed</span>
+        <h2>Four stages. No shortcuts.</h2>
+        <p>Implant dentistry is a sequence, not a single visit — here's the exact order we follow with every patient at GK Dental &amp; Implant Center.</p>
+      </div>
+      <div class="process-grid reveal reveal-stagger">
+        <div class="process-step" style="--i:0"><span class="process-num">01 · CONSULT</span><h4>Exam &amp; diagnosis</h4><p>A full clinical exam and X-ray to understand bone density, gum health and bite alignment.</p></div>
+        <div class="process-step" style="--i:1"><span class="process-num">02 · PLAN</span><h4>Digital scan &amp; mapping</h4><p>3D imaging pinpoints the exact depth, angle and position for the implant before any drilling begins.</p></div>
+        <div class="process-step" style="--i:2"><span class="process-num">03 · PLACE</span><h4>Guided placement</h4><p>The fixture is placed using a surgical guide built from your scan, under local anesthesia.</p></div>
+        <div class="process-step" style="--i:3"><span class="process-num">04 · RESTORE</span><h4>Crown &amp; aftercare</h4><p>Once healed, a custom crown is fitted and matched to your bite and the surrounding teeth.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Patients say it best</span>
+        <h2>A 5.0 rating across 62 reviews.</h2>
+        <p>A few notes from recent visits — shared in patients' own words.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="t-card reveal">
+          <div class="t-stars" aria-hidden="true">★★★★★</div>
+          <p class="t-quote">"I'd put off getting an implant for two years out of nerves. The team explained every step before touching anything, and there was almost no discomfort afterward."</p>
+          <div class="t-person"><div class="t-avatar">A</div><div><div class="t-name">Ananya R.</div><div class="t-meta">Dental Implant</div></div></div>
+        </div>
+        <div class="t-card reveal">
+          <div class="t-stars" aria-hidden="true">★★★★★</div>
+          <p class="t-quote">"Walked in with a cracked tooth on a Saturday evening and they still saw me before closing. Clean clinic, clear pricing, no upselling."</p>
+          <div class="t-person"><div class="t-avatar">S</div><div><div class="t-name">Sandeep M.</div><div class="t-meta">Emergency Visit</div></div></div>
+        </div>
+        <div class="t-card reveal">
+          <div class="t-stars" aria-hidden="true">★★★★★</div>
+          <p class="t-quote">"My son actually looks forward to his check-ups now. The dentist takes the time to explain things in a way an eight-year-old understands."</p>
+          <div class="t-person"><div class="t-avatar">P</div><div><div class="t-name">Priya K.</div><div class="t-meta">Pediatric Care</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Before you book</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <button class="faq-q">Does getting a dental implant hurt?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">The placement itself is done under local anesthesia, so patients typically feel pressure rather than pain. Mild soreness for a day or two afterward is normal and manageable with standard pain relief.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long does the full implant process take?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">From placement to final crown is usually 3–6 months, since the fixture needs time to fuse with the jawbone before it can safely carry a crown. Your exact timeline depends on bone health, assessed at the first visit.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you accept walk-ins or emergency cases?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes — call ahead where possible so we can prepare, but we do our best to fit urgent cases in the same day during opening hours.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is a consultation required before treatment?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Every treatment plan starts with an exam and, for implants, a digital scan — this is what lets us plan the exact placement in advance rather than deciding mid-procedure.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What are your clinic hours?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">The clinic is open daily and closes at 9:00 PM. Hours can occasionally vary around holidays, so a quick call ahead is always a good idea.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Visit or call</span>
+        <h2>Book your appointment</h2>
+        <p>Reach out directly, or send a few details below and we'll call you back to confirm a time.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="info-card">
+            <div class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9A6 6 0 0 1 12 5.3 6 6 0 0 1 21.5 12c-2.5 4.5-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <div><h4>Address</h4><p>SS Heights, 1st Floor, Above Reliance Smart Point, PS Rao Nagar Main Road, Dammaiguda, Hyderabad, Telangana 500083</p><a class="link" href="https://www.google.com/maps/search/?api=1&query=GK+Dental+%26+Implant+Center+Dammaiguda+Hyderabad" target="_blank" rel="noopener">Open in Google Maps →</a></div>
+          </div>
+          <div class="info-card">
+            <div class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 3c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <div><h4>Phone</h4><p><a class="link" href="tel:08919332821">089193 32821</a></p></div>
+          </div>
+          <div class="info-card">
+            <div class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <div><h4>Hours</h4><p>Open daily · closes 9:00 PM<br><span style="font-size:12.5px;color:var(--muted-soft)">Hours may vary on holidays — please call to confirm.</span></p></div>
+          </div>
+        </div>
+
+        <form class="form-card reveal" id="contactForm">
+          <div class="field-row">
+            <div class="field"><label for="name">Full name</label><input id="name" type="text" placeholder="Your name" required></div>
+            <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" placeholder="+91" required></div>
+          </div>
+          <div class="field">
+            <label for="service">Interested in</label>
+            <select id="service">
+              <option>Dental Implants</option>
+              <option>Root Canal Treatment</option>
+              <option>Cosmetic &amp; Smile Design</option>
+              <option>Braces &amp; Aligners</option>
+              <option>Pediatric Dentistry</option>
+              <option>Emergency Visit</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" rows="3" placeholder="Optional — describe your concern"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%" data-ripple>Request Callback</button>
+          <p class="form-note">We'll call you back within the same business day.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><span class="brand-mark">GK</span><span class="brand-name" style="color:#fff">GK Dental<span style="color:rgba(255,255,255,.5)">Implant Center</span></span></a>
+        <p>Precision-planned dental implants and family dentistry in Dammaiguda, Hyderabad.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 8h2V5h-2c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.5c0-.3.2-.5.5-.5Z" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul><li><a href="#services">Services</a></li><li><a href="#about">Our Process</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h5>Treatments</h5>
+        <ul><li><a href="#services">Dental Implants</a></li><li><a href="#services">Root Canal</a></li><li><a href="#services">Cosmetic Dentistry</a></li><li><a href="#services">Orthodontics</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="tel:08919332821">089193 32821</a></li><li><a href="#contact">Dammaiguda, Hyderabad</a></li><li><a href="#contact">Book a visit →</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GK Dental &amp; Implant Center. All rights reserved.</span>
+      <span>Designed for precision care.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+  }, { passive: true });
+
+  // Mobile menu
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Stagger children index
+  document.querySelectorAll('.reveal-stagger').forEach(group => {
+    Array.from(group.children).forEach((child, i) => child.style.setProperty('--i', i));
+  });
+
+  // Ripple effect
+  document.querySelectorAll('[data-ripple]').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      const rect = this.getBoundingClientRect();
+      const ripple = document.createElement('span');
+      const size = Math.max(rect.width, rect.height) * 1.6;
+      ripple.className = 'ripple';
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 650);
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Contact form — simulated submit with loading state
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.classList.add('is-loading');
+    setTimeout(() => {
+      btn.classList.remove('is-loading');
+      btn.textContent = 'Request sent ✓';
+      setTimeout(() => { btn.textContent = originalText; form.reset(); }, 2200);
+    }, 1400);
+  });
+</script>
+
+</body>
+</html>
